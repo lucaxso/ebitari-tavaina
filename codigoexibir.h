@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include "exibir.h"
+#include <string.h>
 
-void ExibirQuadrado( short x, short y){
-	for (short i = 0; i < y; i++){
-		for (short j = 0; j < x; j++){
+
+void ExibirQuadrado( char** lenX, char** lenY){
+	for (short i = 0; i < short(lenX); i++){
+		for (short j = 0; j < short(lenY); j++){
 			printf("%c", '.' );
 		}
-		printf('\n');
+		printf("\n");
 	}
 }
